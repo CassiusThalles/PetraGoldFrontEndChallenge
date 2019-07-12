@@ -67,6 +67,7 @@
 </template>
 
 <script>
+    import axios from 'axios'
     export default {
         name: "App",
         data: function() {
@@ -155,7 +156,26 @@
             calculateExp(birthday) {
                 let exp = Math.floor((this.calculatingAge(birthday) - 7) * Math.pow(22, 1.45))
                 return exp
+            },
+            createKnight(knight) {
+                const url = '127.0.0.1:5000/api/v1/controller/knights/'
+                return axios.post(url, knight)
+            },
+            updateKnight(knight) {
+                const url = `127.0.0.1:5000/api/v1/controller/knights/${knight.id}`
+                return axios.put(url, knight)
+            },
+            deleteKnight(knight) {
+                const url = `127.0.0.1:5000/api/v1/controller/knights/${knight.id}`
+                return axios.delete(url)
             }
+        },
+        mounted() {
+            axios.get('127.0.0.1:5000/api/v1/controller/knights')
+                .then(res => {
+                    this.knights = res.data
+                })
+                .catch(error => console.error(error))
         }
     }
 </script>
