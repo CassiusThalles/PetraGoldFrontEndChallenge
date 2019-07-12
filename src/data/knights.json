@@ -1,0 +1,86 @@
+[
+  {
+    "_id": 1,
+    "name": "Sr. Morte",
+    "nickname": "",
+    "birthday": 20001022,
+    "weapons": [
+      {
+        "_id": 1,
+        "name": "sword",
+        "mod": 3,
+        "attr": "strength",
+        "equipped": false,
+        "_v": 0
+      },
+      {
+        "_id": 2,
+        "name": katana,
+        "mod": 5,
+        "attr": "strength",
+        "equipped": true,
+        "_v": 0
+      },
+      {
+        "_id": 3,
+        "name": "long composite bow",
+        "mod": 3,
+        "attr": "dexterity",
+        "equipped": false,
+        "_v": 0
+      }
+    ],
+    "attributes": {
+      "strength": 18,
+      "dexterity": 12,
+      "constitution": 15,
+      "intelligence": 12,
+      "wisdom": 10,
+      "charisma": 10
+    },
+    "keyAttribute": "strength",
+    "_v": 0
+  },
+  {
+    "_id": 1,
+    "name": "Mr Archer",
+    "nickname": "Scooby",
+    "birthday": 20001022,
+    "weapons": [
+      {
+        "_id": 1,
+        "name": "sword",
+        "mod": 3,
+        "attr": "strength",
+        "equipped": false,
+        "_v": 0
+      },
+      {
+        "_id": 4,
+        "name": "one hand crossbow",
+        "mod": 2,
+        "attr": "dexterity",
+        "equipped": false,
+        "_v": 0
+      },
+      {
+        "_id": 3,
+        "name": "long composite bow",
+        "mod": 3,
+        "attr": "dexterity",
+        "equipped": true,
+        "_v": 0
+      }
+    ],
+    "attributes": {
+      "strength": 14,
+      "dexterity": 19,
+      "constitution": 12,
+      "intelligence": 13,
+      "wisdom": 13,
+      "charisma": 12
+    },
+    "keyAttribute": "dexterity",
+    "_v": 0
+  }
+]
